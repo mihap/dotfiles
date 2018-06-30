@@ -103,9 +103,8 @@ source /Users/mike/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlig
 prompt_context() {}
 
 # node version manager
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias loadnvm=". /Users/mike/dotfiles/loadnvm.sh"
+
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
