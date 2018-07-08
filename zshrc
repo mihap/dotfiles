@@ -105,6 +105,7 @@ prompt_context() {}
 # node version manager
 alias loadnvm=". /Users/mike/dotfiles/loadnvm.sh"
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
